@@ -4,7 +4,9 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using ICSharpCode.SharpZipLib.Zip.Compression;
 using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
+using Newtonsoft.Json;
 using NL.MinVWS.Encoding;
+using PeterO.Cbor;
 
 namespace DCC
 {
@@ -53,7 +55,7 @@ namespace DCC
                 CoseBytes = coseBytes
             });
         }
-
+        
         private string GetBase45(byte[] deflateBytes)
         {
             return Base45Encoding.Encode(deflateBytes);

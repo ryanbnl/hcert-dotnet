@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dgc.tests", "dgc.tests\dgc.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dgc-testdata-tests", "dgc-testdata-tests\dgc-testdata-tests.csproj", "{F41675F5-B621-45CF-A290-4C2A18F6235C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DccGenerator", "DccGenerator\DccGenerator.csproj", "{68200BF0-911D-4DCC-9CB8-BE025817EF33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{F41675F5-B621-45CF-A290-4C2A18F6235C}.Release|x64.Build.0 = Release|Any CPU
 		{F41675F5-B621-45CF-A290-4C2A18F6235C}.Release|x86.ActiveCfg = Release|Any CPU
 		{F41675F5-B621-45CF-A290-4C2A18F6235C}.Release|x86.Build.0 = Release|Any CPU
+		{68200BF0-911D-4DCC-9CB8-BE025817EF33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68200BF0-911D-4DCC-9CB8-BE025817EF33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68200BF0-911D-4DCC-9CB8-BE025817EF33}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{68200BF0-911D-4DCC-9CB8-BE025817EF33}.Debug|x64.Build.0 = Debug|Any CPU
+		{68200BF0-911D-4DCC-9CB8-BE025817EF33}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{68200BF0-911D-4DCC-9CB8-BE025817EF33}.Debug|x86.Build.0 = Debug|Any CPU
+		{68200BF0-911D-4DCC-9CB8-BE025817EF33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68200BF0-911D-4DCC-9CB8-BE025817EF33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68200BF0-911D-4DCC-9CB8-BE025817EF33}.Release|x64.ActiveCfg = Release|Any CPU
+		{68200BF0-911D-4DCC-9CB8-BE025817EF33}.Release|x64.Build.0 = Release|Any CPU
+		{68200BF0-911D-4DCC-9CB8-BE025817EF33}.Release|x86.ActiveCfg = Release|Any CPU
+		{68200BF0-911D-4DCC-9CB8-BE025817EF33}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
