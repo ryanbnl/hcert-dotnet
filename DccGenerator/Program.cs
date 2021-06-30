@@ -5,6 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Text.Json;
 using DCC;
+using Newtonsoft.Json;
 
 namespace DccGenerator
 {
@@ -18,13 +19,18 @@ namespace DccGenerator
 
             var data = File.ReadAllText(args.FirstOrDefault() ?? "dcc.json", Encoding.UTF8);
 
-            var hcert = encoder.Encode(new CWT
+            var dgc = JsonConvert.DeserializeObject<DgCertificate>(data);
+
+            var cwt = new CWT
             {
-                DGCv1 = JsonSerializer.Deserialize<DgCertificate>(data)
-            });
+                DGCv1 = dgc
+            };
+
+            var hcert = encoder.Encode(cwt);
 
             Console.WriteLine($"HCert: |{hcert}|");
             Console.WriteLine(hcert);
+            Console.Read();
         }
     }
 }
